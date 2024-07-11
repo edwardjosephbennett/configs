@@ -27,7 +27,7 @@
     "projects": ["configs"],
     "releaseTagPattern": "v{version}",
     "git": {
-      "commitMessage": "chore(v{version}): release {projectName} [skip ci]",
+      "commitMessage": "chore(release): {projectName} v{version} [skip ci]",
       "tagMessage": "Release {projectName} v{version}\\n\\n{changelogEntry}"
     },
     "version": {
