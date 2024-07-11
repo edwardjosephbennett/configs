@@ -106,9 +106,9 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: pnpm nx configs:build
+      run: pnpm nx run configs:build
 
-    ### Publish the package
+      ### Publish the package
     ### We run the nx release command but skip publishing, so that we can generate the required Changelogs etc
     - name: Publish
       env:
