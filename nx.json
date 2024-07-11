@@ -24,7 +24,7 @@
   },
   "release": {
     "projectsRelationship": "independent",
-    "projects": ["jh-code-standards"],
+    "projects": ["configs"],
     "releaseTagPattern": "v{version}",
     "git": {
       "commitMessage": "chore(v{version}): release {projectName} [skip ci]",
