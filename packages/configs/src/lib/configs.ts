@@ -1,4 +1,5 @@
-export function configs(): string {
+export function configs() : string {
+  console.log("configs")
   return 'configs';
 }
 
