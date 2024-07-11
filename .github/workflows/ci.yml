@@ -26,6 +26,9 @@ permissions:
 jobs:
   "Release":
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write # needed for provenance data generation
+      contents: read
     steps:
     - uses: actions/checkout@v4
       with:
@@ -96,3 +99,19 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         TAG_NAME: ${{ github.ref_name }}
+
+      ### Build the package
+      ### We run the nx release command but skip publishing, so that we can generate the required Changelogs etc
+    - name: Build
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: pnpm nx configs:build
+
+    ### Publish the package
+    ### We run the nx release command but skip publishing, so that we can generate the required Changelogs etc
+    - name: Publish
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: pnpm nx release publish --projects=configs
