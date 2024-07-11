@@ -1,5 +1,43 @@
 {
   "extends": "nx/presets/npm.json",
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "nxCloudAccessToken": "ZGQzZDc3MGQtMTllMy00Y2FlLTg5Y2YtMDI4NTRlZDQzNWVifHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "ZGQzZDc3MGQtMTllMy00Y2FlLTg5Y2YtMDI4NTRlZDQzNWVifHJlYWQtd3JpdGU=",
+  "targetDefaults": {
+    "@nx/js:tsc": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["default", "^default"]
+    }
+  },
+  "plugins": [
+    {
+      "plugin": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    }
+  ],
+  "pluginsConfig": {
+    "@nx/js": {
+      "analyzeSourceFiles": true
+    }
+  },
+  "release": {
+    "projectsRelationship": "independent",
+    "projects": ["jh-code-standards"],
+    "releaseTagPattern": "v{version}",
+    "git": {
+      "commitMessage": "chore(v{version}): release {projectName} [skip ci]",
+      "tagMessage": "Release {projectName} v{version}\\n\\n{changelogEntry}"
+    },
+    "version": {
+      "conventionalCommits": true,
+      "generatorOptions": {
+        "fallbackCurrentVersionResolver": "disk"
+      }
+    },
+    "changelog": {
+      "projectChangelogs": true
+    }
+  }
 }
