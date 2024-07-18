@@ -1,3 +1,17 @@
+## 0.2.4 (2024-07-18)
+
+
+### 🩹 Fixes
+
+- **CI:** update the release command with  flag
+
+- **CI:** use correct output paths and adjust ci
+
+
+### ❤️  Thank You
+
+- Ed Bennett
+
 ## 0.2.3 (2024-07-18)
 
 
