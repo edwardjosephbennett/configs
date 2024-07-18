@@ -1,3 +1,15 @@
+## 0.1.1 (2024-07-18)
+
+
+### 🩹 Fixes
+
+- **configs:** update docs
+
+
+### ❤️  Thank You
+
+- Ed Bennett
+
 ## 0.1.0 (2024-07-18)
 
 
