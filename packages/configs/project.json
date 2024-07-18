@@ -4,12 +4,13 @@
   "sourceRoot": "packages/configs/src",
   "projectType": "library",
   "tags": [],
-  "nx-release-publish": {
-    "options": {
-      "packageRoot": "dist/{projectRoot}"
-    }
-  },
   "targets": {
+    "nx-release-publish": {
+      "options": {
+        "registry": "https://npm.pkg.github.com",
+        "tag": "next"
+      }
+    },
     "build": {
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
