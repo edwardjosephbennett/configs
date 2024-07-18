@@ -1,27 +1,24 @@
 name: "PNPM Cache"
 
+description: "Action to cache PNPM dependencies"
+
 inputs:
   path:
-    type: string
-    required: true
     description: "Path to the PNPM cache directory."
+    required: true
   key:
-    type: string
-    required: true
     description: "Cache key."
-  restoreKeys:
-    type: string
     required: true
+  restore-keys:
     description: "Cache keys to restore."
+    required: true
 
 runs:
-  using: 'composite'
+  using: "composite"
   steps:
-    pnpmCache:
+    - name: 'pnpm-cache'
       uses: actions/cache@v4
-      name: "Setup PNPM cache"
       with:
         path: ${{ inputs.path }}
         key: ${{ inputs.key }}
-        restore-keys: ${{ inputs.restoreKeys }}
-
+        restore-keys: ${{ inputs.restore-keys }}

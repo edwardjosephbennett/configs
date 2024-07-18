@@ -72,7 +72,7 @@ jobs:
           ${{ steps.pnpm-cache.outputs.STORE_PATH }}
           **/node_modules
         key: "${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}"
-        restoreKeys: |
+        restore-keys: |
           "${{ runner.os }}-pnpm-"  
           
 
@@ -86,8 +86,8 @@ jobs:
 
     - name: Setup Git config
       run: |
-        git config --global user.name 'GitHub Action'
-        git config --global user.email 'action@github.com'
+        git config user.name "$(git log -n 1 --pretty=format:%an)"
+        git config user.email "$(git log -n 1 --pretty=format:%ae)"
         git config --global --add url."git@github.com:".insteadOf "https://github.com/"
 
     ### Release the package
@@ -103,8 +103,8 @@ jobs:
     ### This is so that the release tag is included in the commit message
     - name: Push changes
       run: |
-        git config user.name 'GitHub Action'
-        git config user.email 'action@github.com'
+        git config user.name "$(git log -n 1 --pretty=format:%an)"
+        git config user.email "$(git log -n 1 --pretty=format:%ae)"
         git log
         git push --follow-tags
       env:
