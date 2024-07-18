@@ -1,3 +1,15 @@
+## 0.3.1 (2024-07-18)
+
+
+### 🩹 Fixes
+
+- **CI:** correct scopes
+
+
+### ❤️  Thank You
+
+- Ed Bennett
+
 ## 0.3.0 (2024-07-18)
 
 
