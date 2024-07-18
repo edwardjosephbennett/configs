@@ -9,7 +9,7 @@
       "executor": "@nx/js:release-publish",
       "options": {
         "buildTarget": "configs:build",
-        "outputPath": "dist/packages/configs",
+        "outputPath": "{workspaceRoot}/dist/{projectRoot}",
         "registry": "https://npm.pkg.github.com",
         "tag": "next"
       }
@@ -18,7 +18,7 @@
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/packages/configs",
+        "outputPath": "{workspaceRoot}/dist/{projectRoot}",
         "main": "packages/configs/src/index.ts",
         "tsConfig": "packages/configs/tsconfig.lib.json",
         "assets": ["packages/configs/*.md"]

@@ -3,11 +3,6 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "nxCloudAccessToken": "ZGQzZDc3MGQtMTllMy00Y2FlLTg5Y2YtMDI4NTRlZDQzNWVifHJlYWQtd3JpdGU=",
   "targetDefaults": {
-      "nx-release-publish": {
-        "options": {
-          "packageRoot": "dist/{projectName}"
-        }
-      },
       "@nx/js:tsc": {
       "cache": true,
       "dependsOn": ["^build"],

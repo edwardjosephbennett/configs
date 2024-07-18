@@ -116,5 +116,5 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        ls -a
+        ls dist/packages/configs -al
         pnpm nx release publish --projects=configs --verbose
