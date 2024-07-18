@@ -9,7 +9,7 @@
       "executor": "@nx/js:release-publish",
       "options": {
         "buildTarget": "configs:build",
-        "outputPath": "dist/configs",
+        "outputPath": "dist/packages/configs",
         "registry": "https://npm.pkg.github.com",
         "tag": "next"
       }
