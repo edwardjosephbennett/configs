@@ -31,6 +31,16 @@
     "projectsRelationship": "independent",
     "projects": ["configs"],
     "releaseTagPattern": "v{version}",
+    "conventionalCommits": {
+      "types": {
+        "feature": {
+          "semverBump": "minor",
+          "changelog": {
+            "title": "\uD83D\uDE80 Features"
+          }
+        }
+      }
+    },
     "git": {
       "commitMessage": "chore(release): {projectName} v{version} [skip ci]",
       "tagMessage": "Release {projectName} v{version}\\n\\n{changelogEntry}"
