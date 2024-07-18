@@ -1,3 +1,15 @@
+## 0.2.3 (2024-07-18)
+
+
+### 🩹 Fixes
+
+- **CI:** use correct outputPath
+
+
+### ❤️  Thank You
+
+- Ed Bennett
+
 ## 0.2.2 (2024-07-18)
 
 
