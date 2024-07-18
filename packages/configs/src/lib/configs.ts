@@ -3,6 +3,9 @@ export function configs() : string {
   return 'configs';
 }
 
+/**
+ * @deprecated
+ */
 export function debug() : string {
   return "debug";
 }
