@@ -20,6 +20,9 @@
       "options": {
         "targetName": "lint"
       }
+    },
+    {
+      "plugin": "@nx/js"
     }
   ],
   "pluginsConfig": {

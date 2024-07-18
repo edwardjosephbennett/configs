@@ -10,6 +10,9 @@ export function debug() : string {
   return "debug";
 }
 
+/**
+ * @deprecated
+ */
 export function debugNew() : string {
   return "debugNew";
 }
