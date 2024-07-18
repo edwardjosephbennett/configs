@@ -1,3 +1,15 @@
+## 0.2.0 (2024-07-18)
+
+
+### 🚀 Features
+
+- **CI:** getting packages to deploy
+
+
+### ❤️  Thank You
+
+- Ed Bennett
+
 ## 0.1.1 (2024-07-18)
 
 
