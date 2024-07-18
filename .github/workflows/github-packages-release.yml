@@ -19,17 +19,14 @@ on:
   # tab in the GitHub repo.
   workflow_dispatch:
 
-permissions:
-  actions: read
-  contents: read
-  packages: write
-
 jobs:
   "Release":
     runs-on: ubuntu-latest
     permissions:
       id-token: write # needed for provenance data generation
       contents: read
+      packages: write
+
     steps:
     - uses: actions/checkout@v4
       with:
@@ -96,7 +93,6 @@ jobs:
       run: |
         git config user.name "$(git log -n 1 --pretty=format:%an)"
         git config user.email "$(git log -n 1 --pretty=format:%ae)"
-        git log
         git push --follow-tags
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
