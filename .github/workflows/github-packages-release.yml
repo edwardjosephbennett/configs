@@ -41,7 +41,7 @@ jobs:
       with:
         node-version: 19
         registry-url: 'https://npm.pkg.github.com'
-        scope: 'edwardjosephbennett'
+        scope: '@edwardjosephbennett'
       
     ### Install pnpm
     - name: Install pnpm
