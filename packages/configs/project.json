@@ -6,7 +6,7 @@
   "tags": [],
   "targets": {
     "nx-release-publish": {
-      "executor": "@nx/js:publib",
+      "executor": "@nx/js:release-publish",
       "options": {
         "buildTarget": "configs:build",
         "outputPath": "dist/configs",
