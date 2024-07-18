@@ -1,3 +1,20 @@
+## 0.3.0 (2024-07-18)
+
+
+### 🩹 Fixes
+
+- **CI:** allow auth with Github packages
+
+
+### 🚀 Features
+
+- **config:** adding new function
+
+
+### ❤️  Thank You
+
+- Ed Bennett
+
 ## 0.2.5 (2024-07-18)
 
 
