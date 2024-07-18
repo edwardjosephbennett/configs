@@ -4,12 +4,12 @@
   "sourceRoot": "packages/configs/src",
   "projectType": "library",
   "tags": [],
+  "nx-release-publish": {
+    "options": {
+      "packageRoot": "dist/{projectRoot}"
+    }
+  },
   "targets": {
-    "nx-release-publish": {
-      "options": {
-        "packageRoot": "dist/{projectRoot}"
-      }
-    },
     "build": {
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
