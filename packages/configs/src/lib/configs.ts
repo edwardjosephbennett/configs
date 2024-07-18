@@ -3,4 +3,8 @@ export function configs() : string {
   return 'configs';
 }
 
+export function debug() : string {
+  return "debug";
+}
+
 export default configs;
