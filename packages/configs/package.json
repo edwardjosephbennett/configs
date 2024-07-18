@@ -1,5 +1,5 @@
 {
-  "name": "@edwardjosephbennett/configs",
+  "name": "configs",
   "version": "0.3.0",
   "dependencies": {
     "tslib": "^2.3.0"
