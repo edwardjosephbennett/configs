@@ -17,4 +17,8 @@ export function debugNew() : string {
   return "debugNew";
 }
 
+export function brandNewDeploymentFunction(paramOne: string) : string {
+  return paramOne;
+}
+
 export default configs;
