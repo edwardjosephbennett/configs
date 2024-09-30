@@ -1,24 +1,6 @@
-export function configs() : string {
-  console.log("configs")
-  return 'configs';
+export function consoleOutput = (param: string) : null => {
+  console.log(param);
+  return null;
 }
 
-/**
- * @deprecated
- */
-export function debug() : string {
-  return "debug";
-}
-
-/**
- * @deprecated
- */
-export function debugNew() : string {
-  return "debugNew";
-}
-
-export function brandNewDeploymentFunction(paramOne: string) : string {
-  return paramOne;
-}
-
-export default configs;
+export default consoleOutput;
