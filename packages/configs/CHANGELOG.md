@@ -1,3 +1,17 @@
+## 0.4.1 (2024-10-01)
+
+
+### 🩹 Fixes
+
+- **CI:** ensure nx doesn't build with cloud
+
+- **functions:** use correct function format
+
+
+### ❤️  Thank You
+
+- Ed Bennett
+
 ## 0.4.0 (2024-10-01)
 
 
