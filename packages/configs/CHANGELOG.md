@@ -1,3 +1,22 @@
+## 0.5.0 (2024-10-01)
+
+
+### 🩹 Fixes
+
+- **CI:** disable cloud ([be9669e](https://github.com/edwardjosephbennett/configs/commit/be9669e))
+
+- **CI:** bump nx version ([ba6c6ad](https://github.com/edwardjosephbennett/configs/commit/ba6c6ad))
+
+
+### 🚀 Features
+
+- **functions:** add some new exports ([14b708b](https://github.com/edwardjosephbennett/configs/commit/14b708b))
+
+
+### ❤️  Thank You
+
+- Ed Bennett @edwardjosephbennett
+
 ## 0.4.1 (2024-10-01)
 
 
