@@ -1,3 +1,20 @@
+## 0.4.0 (2024-10-01)
+
+
+### 🩹 Fixes
+
+- **CI:** correct permissions
+
+
+### 🚀 Features
+
+- **function:** add new output function
+
+
+### ❤️  Thank You
+
+- Ed Bennett
+
 ## 0.3.2 (2024-07-18)
 
 
