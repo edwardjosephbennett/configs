@@ -36,6 +36,12 @@
           "changelog": {
             "title": "\uD83D\uDE80 Features"
           }
+        },
+        "chore": {
+          "semverBump": "patch",
+          "changelog": {
+            "title": "\uD83D\uDE80 Chores"
+          }
         }
       }
     },
