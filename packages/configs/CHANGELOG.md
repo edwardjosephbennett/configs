@@ -1,3 +1,27 @@
+## 0.5.1 (2024-10-01)
+
+
+### 🩹 Fixes
+
+- **CI:** ensure tag is set correctly ([53ae11f](https://github.com/edwardjosephbennett/configs/commit/53ae11f))
+
+
+### 🚀 Chores
+
+- **CI:** bump up all package versions ([ac528bd](https://github.com/edwardjosephbennett/configs/commit/ac528bd))
+
+- **release:** configs v{version} [skip ci] ([633486c](https://github.com/edwardjosephbennett/configs/commit/633486c))
+
+
+### 🚀 Features
+
+- **CI:** allow nx cloud again ([832e813](https://github.com/edwardjosephbennett/configs/commit/832e813))
+
+
+### ❤️  Thank You
+
+- Ed Bennett @edwardjosephbennett
+
 ## 0.5.0 (2024-10-01)
 
 
