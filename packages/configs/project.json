@@ -11,7 +11,7 @@
         "buildTarget": "configs:build",
         "outputPath": "{workspaceRoot}/dist/{projectRoot}",
         "registry": "https://npm.pkg.github.com",
-        "tag": "next"
+        "tag": "latest"
       }
     },
     "build": {
