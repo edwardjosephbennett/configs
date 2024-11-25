@@ -2,6 +2,7 @@
   "name": "@edwardjosephbennett/configs",
   "version": "0.5.1",
   "dependencies": {
+    "@playwright/test": "^1.49.0",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
