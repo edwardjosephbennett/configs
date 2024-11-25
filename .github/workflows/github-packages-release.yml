@@ -65,7 +65,7 @@ jobs:
           
 
     - name: Install dependencies
-      run: pnpm install
+      run: pnpm install --no-frozen-lockfile
 
     - name: Setup SSH key
       uses: webfactory/ssh-agent@v0.9.0
