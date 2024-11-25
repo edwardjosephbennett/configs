@@ -1,3 +1,22 @@
+## 0.6.0 (2024-11-25)
+
+
+### 🩹 Fixes
+
+- **CI:** pass tagg flag to publish command ([6d0d6c6](https://github.com/edwardjosephbennett/configs/commit/6d0d6c6))
+
+- **ci:** amend ci to not use frozen lockfile ([6bc7efa](https://github.com/edwardjosephbennett/configs/commit/6bc7efa))
+
+
+### 🚀 Features
+
+- **playwright:** add default playwright config for export ([bbdc348](https://github.com/edwardjosephbennett/configs/commit/bbdc348))
+
+
+### ❤️  Thank You
+
+- Ed Bennett @edwardjosephbennett
+
 ## 0.5.1 (2024-10-01)
 
 
